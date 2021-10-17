@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Mediscreen.iml" filepath="$PROJECT_DIR$/.idea/Mediscreen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mediscreen-ms-notes/Mediscreen-ms-notes.iml" filepath="$PROJECT_DIR$/Mediscreen-ms-notes/Mediscreen-ms-notes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mediscreen-ms-patient/Mediscreen-ms-patient.iml" filepath="$PROJECT_DIR$/Mediscreen-ms-patient/Mediscreen-ms-patient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mediscreen-webApp/Mediscreen-webApp.iml" filepath="$PROJECT_DIR$/Mediscreen-webApp/Mediscreen-webApp.iml" />
+    </modules>
+  </component>
+</project>
