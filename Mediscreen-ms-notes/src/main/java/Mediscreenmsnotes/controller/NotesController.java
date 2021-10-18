@@ -22,9 +22,30 @@ public class NotesController {
         return noteService.createNote(note);
     }
 
+
+
+    @GetMapping
+    public Note getNoteById(@RequestParam(name = "id") String id) {
+        return noteService.findNoteById(id);
+    }
+/*
+    @PostMapping
+    public void updatePatient(@RequestParam(name = "id") Integer id, @RequestBody Patient patient) {
+        patientService.updatePatient(patient, id);
+    }
+
+    @DeleteMapping
+    public void deletePatient(@RequestParam(name = "id") Integer id) {
+        patientService.deletePatient(id);
+    }
+
+
+ */
     @GetMapping("/getAll")
     public List<Note> getAllNotes() {
         return noteService.findAllNotes();
     }
+
+
 
 }

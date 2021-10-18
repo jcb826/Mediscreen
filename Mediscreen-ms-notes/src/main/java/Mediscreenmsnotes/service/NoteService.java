@@ -15,7 +15,7 @@ public class NoteService {
         this.noteRepository = noteRepository;
     }
 
-    public Note createNote(Note note ) {
+    public Note createNote(Note note) {
 
         return noteRepository.save(note);
     }
@@ -26,6 +26,21 @@ public class NoteService {
         return noteRepository.findAll();
 
     }
+
+    public Note findNoteById(String id) {
+        return noteRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("Invalid patient Id:" + id));
+    }
+/*
+    public Patient updatePatient(Patient patient, Integer id) {
+        patient.setId(id);
+        return patientRepository.save(patient);
+    }
+    public void deletePatient(Integer id){
+        Patient patient = patientRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("Invalid patient Id:" + id));
+        patientRepository.delete(patient);
+    }
+
+ */
 
 
 }
