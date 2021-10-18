@@ -32,6 +32,8 @@ public class PatientService {
 
     }
 
+
+
     public Patient findPatientById (Integer id){
         return patientGateway.findPatientById(id).getBody();
     }
