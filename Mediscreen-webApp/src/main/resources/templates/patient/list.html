@@ -33,6 +33,7 @@
 				<th>gender</th>
 				<th>address</th>
 				<th>phone</th>
+				<th>notes</th>
 			</tr>
 			</thead>
 			<tbody>
@@ -44,6 +45,7 @@
 				<td th:text="${patient.gender}"></td>
 				<td th:text="${patient.address}"></td>
 				<td th:text="${patient.phone}"></td>
+				<td th:href="@{/notes/list/{id}(id=${patient.id})}">manage</td>
 				<td style="width: 15%" class="text-center">
 					<a th:href="@{/patient/update/{id}(id=${patient.id})}">Edit</a>&nbsp;|&nbsp;
 					<a th:href="@{/patient/delete/{id}(id=${patient.id})}">Delete</a>

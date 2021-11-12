@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.validation.constraints.NotBlank;
 import java.time.LocalDate;
+import java.util.List;
 
 @Data
 
@@ -21,6 +22,7 @@ public class Patient {
     private String address;
     @NotBlank(message = "please enter your given")
     private String phone;
+
 
 
     public Patient() {

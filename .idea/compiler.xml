@@ -7,15 +7,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Mediscreen-ms-notes" />
         <module name="Mediscreen-ms-patient" />
+        <module name="Mediscreen-ms-notes" />
         <module name="Mediscreen-webApp" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Mediscreen-ms-notes" target="17" />
-      <module name="Mediscreen-ms-patient" target="17" />
-      <module name="Mediscreen-webApp" target="17" />
+      <module name="Mediscreen-ms-notes" target="16" />
+      <module name="Mediscreen-ms-patient" target="16" />
+      <module name="Mediscreen-webApp" target="16" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
