@@ -1,4 +1,5 @@
 package Mediscreenmspatient.controller;
+
 import Mediscreenmspatient.model.Patient;
 import Mediscreenmspatient.service.PatientService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,27 +16,30 @@ public class PatientController {
     PatientService patientService;
 
 
-        @PostMapping("/add")
-        public Patient addPatient(@RequestBody @Valid Patient patient) {
-            return patientService.createPatient(patient);
-        }
-        @GetMapping
-        public Patient getPatientById(@RequestParam(name = "id") int number) {
-            return this.patientService.findPatientById(number);
-        }
-        @PostMapping
-        public void updatePatient(@RequestParam(name = "id") Integer id, @RequestBody Patient patient) {
-            patientService.updatePatient(patient, id);
-        }
-        @DeleteMapping
-        public void deletePatient(@RequestParam(name = "id") Integer id) {
-            patientService.deletePatient(id);
-        }
+    @PostMapping("/add")
+    public Patient addPatient(@RequestBody @Valid Patient patient) {
+        return patientService.createPatient(patient);
+    }
 
-        @GetMapping("/getAll")
-        public List<Patient> patientsgetAllPatients() {
-            return patientService.findAllPatients();
-        }
+    @GetMapping
+    public Patient getPatientById(@RequestParam(name = "id") int number) {
+        return this.patientService.findPatientById(number);
+    }
+
+    @PostMapping
+    public void updatePatient(@RequestParam(name = "id") Integer id, @RequestBody Patient patient) {
+        patientService.updatePatient(patient, id);
+    }
+
+    @DeleteMapping
+    public void deletePatient(@RequestParam(name = "id") Integer id) {
+        patientService.deletePatient(id);
+    }
+
+    @GetMapping("/getAll")
+    public List<Patient> patientsgetAllPatients() {
+        return patientService.findAllPatients();
+    }
 
 
 
