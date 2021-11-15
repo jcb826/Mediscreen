@@ -29,7 +29,15 @@ public class NoteService {
 
     public Note findNoteById(String id) {
         return noteRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("Invalid patient Id:" + id));
+
     }
+
+    public List<Note> findNotesByPatientId(String id) {
+
+        return noteRepository.findByPatientId(id);
+
+    }
+
 /*
     public Patient updatePatient(Patient patient, Integer id) {
         patient.setId(id);

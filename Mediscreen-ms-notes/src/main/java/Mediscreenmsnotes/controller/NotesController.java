@@ -24,9 +24,13 @@ public class NotesController {
 
 
 
-    @GetMapping
+    @GetMapping("/note")
     public Note getNoteById(@RequestParam(name = "id") String id) {
         return noteService.findNoteById(id);
+    }
+    @GetMapping("/notes")
+    public List<Note> getNotesById(@RequestParam(name = "id") String id) {
+        return noteService.findNotesByPatientId(id);
     }
 /*
     @PostMapping
