@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8f60fe0-0027-41d3-96a9-e010b46e1eba" name="Changes" comment="">
+    <list default="true" id="c8f60fe0-0027-41d3-96a9-e010b46e1eba" name="Changes" comment="implementing CRUD on mongoDB">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mediscreen-ms-notes/src/main/java/Mediscreenmsnotes/controller/NotesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-ms-notes/src/main/java/Mediscreenmsnotes/controller/NotesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediscreen-ms-notes/src/main/java/Mediscreenmsnotes/model/Note.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-ms-notes/src/main/java/Mediscreenmsnotes/model/Note.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mediscreen-ms-notes/src/main/java/Mediscreenmsnotes/repository/NoteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-ms-notes/src/main/java/Mediscreenmsnotes/repository/NoteRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mediscreen-ms-notes/src/main/java/Mediscreenmsnotes/service/NoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-ms-notes/src/main/java/Mediscreenmsnotes/service/NoteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediscreen-ms-notes/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-ms-notes/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mediscreen-webApp/src/main/java/MediscreenwebApp/controller/NotesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-webApp/src/main/java/MediscreenwebApp/controller/NotesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mediscreen-webApp/src/main/java/MediscreenwebApp/gateway/NoteGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-webApp/src/main/java/MediscreenwebApp/gateway/NoteGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mediscreen-webApp/src/main/java/MediscreenwebApp/service/NotesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-webApp/src/main/java/MediscreenwebApp/service/NotesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mediscreen-webApp/src/main/resources/templates/patient/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-webApp/src/main/resources/templates/patient/list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +37,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Mediscreen-webApp/src/main/resources/templates/notes" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\bazin\projets OCR\Mediscreen\Mediscreen-webApp\src\main\resources\templates\notes" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.MediscreenMsNotesApplication">
     <configuration name="MediscreenMsNotesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -94,9 +102,30 @@
       <option name="presentableId" value="Default" />
       <updated>1636716959983</updated>
     </task>
+    <task id="LOCAL-00001" summary="implementing CRUD on mongoDB">
+      <created>1636988589728</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1636988589728</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="implementing CRUD on mongoDB" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementing CRUD on mongoDB" />
   </component>
 </project>

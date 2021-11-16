@@ -32,7 +32,7 @@ public class NoteService {
 
     }
 
-    public List<Note> findNotesByPatientId(String id) {
+    public List<Note> findNotesByPatientId(Long id) {
 
         return noteRepository.findByPatientId(id);
 

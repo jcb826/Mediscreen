@@ -28,9 +28,15 @@ public class NotesController {
     public Note getNoteById(@RequestParam(name = "id") String id) {
         return noteService.findNoteById(id);
     }
+
     @GetMapping("/notes")
-    public List<Note> getNotesById(@RequestParam(name = "id") String id) {
-        return noteService.findNotesByPatientId(id);
+    public List<Note> getNotesById(@RequestParam(name = "patientId") Long patientId) {
+        return noteService.findNotesByPatientId(patientId);
+    }
+/*
+@GetMapping("/notes/{patientId}")
+    public List<Note> getNotesById(@PathVariable(name = "patientId") Long patientId) {
+        return noteService.findNotesByPatientId(patientId);
     }
 /*
     @PostMapping

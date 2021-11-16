@@ -45,7 +45,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 
         @GetMapping("/list/{id}")
-        public String getAllNotes(@PathVariable("id") Integer id, Model model) {
+        public String getAllNotesById(@PathVariable("id") Integer id, Model model) {
             model.addAttribute("notes", notesService.findAllNotes(id));
             return "notes/list";
         }

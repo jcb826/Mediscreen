@@ -17,7 +17,7 @@ public class NoteGateway {
     }
 
     @SneakyThrows
-    public ResponseEntity<Note[]> getAllNotes() {
+    public ResponseEntity<Note[]> getAllNotesById() {
         return restTemplate.getForEntity("http://localhost:27018/note/getAll", Note[].class);
     }
 }

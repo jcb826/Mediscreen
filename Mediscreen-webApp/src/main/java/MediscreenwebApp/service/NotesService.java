@@ -19,7 +19,7 @@ public class NotesService {
 
     public List<Note> findAllNotes(Integer id) {
 
-        return Arrays.stream(noteGateway.getAllNotes().getBody()).toList();
+        return Arrays.stream(noteGateway.getAllNotesById().getBody()).toList();
 
     }
 
