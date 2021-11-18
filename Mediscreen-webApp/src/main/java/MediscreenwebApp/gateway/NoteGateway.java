@@ -7,6 +7,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
+import java.net.CacheRequest;
+import java.util.UUID;
+
 @Component
 public class NoteGateway {
 
@@ -17,7 +20,11 @@ public class NoteGateway {
     }
 
     @SneakyThrows
-    public ResponseEntity<Note[]> getAllNotesById() {
-        return restTemplate.getForEntity("http://localhost:27018/note/getAll", Note[].class);
+    public ResponseEntity<Note[]> getAllNotesByPatientId(Long patientId) {
+        return restTemplate.getForEntity("http://localhost:8082/patHistory/notes?patientId={patientId}", Note[].class,patientId);
     }
+
+
+
+
 }

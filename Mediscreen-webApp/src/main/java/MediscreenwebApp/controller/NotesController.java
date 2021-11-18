@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
-    @RequestMapping("notes")
-    public class NotesController {
+@RequestMapping("notes")
+public class NotesController {
 
     private final NotesService notesService;
 
@@ -44,11 +44,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
  */
 
-        @GetMapping("/list/{id}")
-        public String getAllNotesById(@PathVariable("id") Integer id, Model model) {
-            model.addAttribute("notes", notesService.findAllNotes(id));
-            return "notes/list";
-        }
+    @GetMapping("/list/{patientId}")
+    public String getAllNotesByPatientId(@PathVariable("patientId") Long patientId, Model model) {
+        model.addAttribute("notes", notesService.getAllNotesByPatientId(patientId));
+        return "notes/list";
+    }
 
 
 

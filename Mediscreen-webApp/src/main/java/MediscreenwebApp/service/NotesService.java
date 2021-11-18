@@ -17,11 +17,8 @@ public class NotesService {
 
     }
 
-    public List<Note> findAllNotes(Integer id) {
 
-        return Arrays.stream(noteGateway.getAllNotesById().getBody()).toList();
-
+    public List<Note> getAllNotesByPatientId(Long patientId) {
+        return Arrays.stream(noteGateway.getAllNotesByPatientId(patientId).getBody()).toList();
     }
-
-
 }

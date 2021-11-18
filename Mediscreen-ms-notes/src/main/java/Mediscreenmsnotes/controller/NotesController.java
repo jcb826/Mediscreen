@@ -31,7 +31,9 @@ public class NotesController {
 
     @GetMapping("/notes")
     public List<Note> getNotesById(@RequestParam(name = "patientId") Long patientId) {
+
         return noteService.findNotesByPatientId(patientId);
+
     }
 /*
 @GetMapping("/notes/{patientId}")

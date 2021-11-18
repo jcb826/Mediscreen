@@ -5,8 +5,7 @@ import java.time.LocalDate;
 
 public class Note {
 
-
-    private Integer id;
-    private String visiteNote;
-
+    public String id;
+    public Long patientId;
+    public String note;
 }

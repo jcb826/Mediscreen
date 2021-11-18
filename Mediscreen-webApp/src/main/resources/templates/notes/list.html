@@ -22,34 +22,18 @@
 	</div>
 	<div class="row"><h2>User List</h2></div>
 	<div class="row">
-		<a href="/patient/add" class="btn btn-primary btn-sm">Add New</a>
+		<a href="/note/add" class="btn btn-primary btn-sm">Add New note</a>
 		<table class="table table-bordered">
 			<thead>
 			<tr>
-				<th>Id</th>
-				<th>first name</th>
-				<th>last name</th>
-				<th>birthday</th>
-				<th>gender</th>
-				<th>address</th>
-				<th>phone</th>
+
 				<th>notes</th>
 			</tr>
 			</thead>
 			<tbody>
-			<tr th:each="patient : ${patients}">
-				<td style="width: 10%" th:text="${patient.id}"></td>
-				<td th:text="${patient.firstName}"></td>
-				<td th:text="${patient.lastName}"></td>
-				<td style="width: 25%" th:text="${patient.birthday}"></td>
-				<td th:text="${patient.gender}"></td>
-				<td th:text="${patient.address}"></td>
-				<td th:text="${patient.phone}"></td>
-				<td th:href="@{/notes/list/{id}(id=${patient.id})}">manage</td>
-				<td style="width: 15%" class="text-center">
-					<a th:href="@{/patient/update/{id}(id=${patient.id})}">Edit</a>&nbsp;|&nbsp;
-					<a th:href="@{/patient/delete/{id}(id=${patient.id})}">Delete</a>
-				</td>
+			<tr th:each="note : ${notes}">
+				<td style="width: 10%" th:text="${note.note}"></td>
+
 			</tr>
 			</tbody>
 		</table>
