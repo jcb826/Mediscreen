@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8f60fe0-0027-41d3-96a9-e010b46e1eba" name="Changes" comment="implementing CRUD on mongoDB">
+    <list default="true" id="c8f60fe0-0027-41d3-96a9-e010b46e1eba" name="Changes" comment="update notes view">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediscreen-ms-notes/src/main/java/Mediscreenmsnotes/controller/NotesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-ms-notes/src/main/java/Mediscreenmsnotes/controller/NotesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediscreen-webApp/src/main/java/MediscreenwebApp/controller/NotesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-webApp/src/main/java/MediscreenwebApp/controller/NotesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediscreen-webApp/src/main/java/MediscreenwebApp/gateway/NoteGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-webApp/src/main/java/MediscreenwebApp/gateway/NoteGateway.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediscreen-webApp/src/main/java/MediscreenwebApp/model/Note.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-webApp/src/main/java/MediscreenwebApp/model/Note.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediscreen-webApp/src/main/java/MediscreenwebApp/service/NotesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-webApp/src/main/java/MediscreenwebApp/service/NotesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediscreen-webApp/src/main/resources/templates/notes/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-webApp/src/main/resources/templates/notes/list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,8 +81,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.MediscreenWebAppApplication" />
-        <item itemvalue="Application.MediscreenMsNotesApplication" />
         <item itemvalue="Application.MediscreenMsPatientApplication" />
+        <item itemvalue="Application.MediscreenMsNotesApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -115,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637063542912</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update notes view">
+      <created>1637240382548</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1637240382548</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -132,7 +133,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="implementing CRUD on mongoDB" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementing CRUD on mongoDB" />
+    <MESSAGE value="update notes view" />
+    <option name="LAST_COMMIT_MESSAGE" value="update notes view" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
