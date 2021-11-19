@@ -26,12 +26,13 @@
 		<table class="table table-bordered">
 			<thead>
 			<tr>
-
+				<th>date</th>
 				<th>notes</th>
 			</tr>
 			</thead>
 			<tbody>
 			<tr th:each="note : ${notes}">
+				<td style="width: 10%" th:text="${note.noteDate}"></td>
 				<td style="width: 10%" th:text="${note.note}"></td>
 
 			</tr>
