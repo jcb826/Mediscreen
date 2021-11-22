@@ -6,9 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c8f60fe0-0027-41d3-96a9-e010b46e1eba" name="Changes" comment="update notes view">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_11_2021_13_39__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_11_2021_13_39__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_11_2021_14_03__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_11_2021_14_03__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediscreen-ms-notes/src/main/java/Mediscreenmsnotes/model/Note.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-ms-notes/src/main/java/Mediscreenmsnotes/model/Note.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediscreen-webApp/src/main/java/MediscreenwebApp/model/Note.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-webApp/src/main/java/MediscreenwebApp/model/Note.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mediscreen-webApp/src/main/java/MediscreenwebApp/controller/NotesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-webApp/src/main/java/MediscreenwebApp/controller/NotesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mediscreen-webApp/src/main/resources/templates/notes/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-webApp/src/main/resources/templates/notes/add.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mediscreen-webApp/src/main/resources/templates/notes/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-webApp/src/main/resources/templates/notes/list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +36,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Mediscreen-webApp/src/main/resources/templates/notes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ms-gps" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
@@ -120,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637240382548</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update notes view">
+      <created>1637326951340</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1637326951340</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

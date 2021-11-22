@@ -1,11 +1,18 @@
 package MediscreenwebApp.controller;
 
+import MediscreenwebApp.model.Note;
+import MediscreenwebApp.model.Patient;
 import MediscreenwebApp.service.NotesService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.validation.Valid;
+import java.time.LocalDate;
 
 
 @Controller
@@ -20,33 +27,34 @@ public class NotesController {
 
 
 
+    @GetMapping("/add/{patientId}")
+    public String addNote(@PathVariable("patientId") Long patientId, Model model,Note note) {
+        //  logger.info("REQUEST: /bidList/add GET {} ");
+        model.addAttribute("patientId", patientId);
+        return "notes/add";
+    }
 
 
 
-/*
-
-        @GetMapping("/add")
-        public String addPatient(Patient patient) {
-            //  logger.info("REQUEST: /bidList/add GET {} ");
-            return "patient/add";
-        }
 
         @PostMapping("/validate")
-        public String validate(@Valid Patient patient, BindingResult result, Model model) {
-            //  logger.info("REQUEST: /patient/validate POST  {} ", JsonStream.serialize(patient));
+        public String validate(@Valid Note note, BindingResult result, Model model) {
+
             if (!result.hasErrors()) {
-                patientService.createPatient(patient);
-                model.addAttribute("patients", patientService.findAllPatients());
-                return "redirect:/patient/list";
+                note.setNoteDate(LocalDate.now());
+              //  notesService.t(patient);
+                model.addAttribute("notes", notesService.getAllNotesByPatientId(note.getPatientId()));
+                return "redirect:/notes/list/" + note.getPatientId();
             }
             return "patient/add";
         }
 
- */
+
 
     @GetMapping("/list/{patientId}")
     public String getAllNotesByPatientId(@PathVariable("patientId") Long patientId, Model model) {
         model.addAttribute("notes", notesService.getAllNotesByPatientId(patientId));
+        model.addAttribute("patientId", patientId);
         return "notes/list";
     }
 
