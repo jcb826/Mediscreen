@@ -23,6 +23,10 @@
 	<div class="row"><h2>User List</h2></div>
 	<div class="row">
 		<a th:href="@{/notes/add/{id}(id=${patientId})}">Add New note</a>
+
+		<div class="col-6 text-right">
+			<td style="width: 10%" th:text="${scoring}"></td>
+		</div>
 		<table class="table table-bordered">
 			<thead>
 			<tr>

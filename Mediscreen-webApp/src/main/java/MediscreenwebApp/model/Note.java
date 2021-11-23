@@ -6,7 +6,7 @@ import java.time.LocalDate;
 public class Note {
 
     private String id;
-    private Long patientId;
+    private Integer patientId;
     private String note;
     private LocalDate noteDate;
 
@@ -14,7 +14,7 @@ public class Note {
     public Note() {
     }
 
-    public Note(String id, Long patientId, String note, LocalDate noteDate) {
+    public Note(String id, Integer patientId, String note, LocalDate noteDate) {
         this.id = id;
         this.patientId = patientId;
         this.note = note;
@@ -29,11 +29,11 @@ public class Note {
         this.id = id;
     }
 
-    public Long getPatientId() {
+    public Integer getPatientId() {
         return patientId;
     }
 
-    public void setPatientId(Long patientId) {
+    public void setPatientId(Integer patientId) {
         this.patientId = patientId;
     }
 

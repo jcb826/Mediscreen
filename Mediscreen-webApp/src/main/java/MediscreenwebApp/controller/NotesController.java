@@ -1,8 +1,8 @@
 package MediscreenwebApp.controller;
 
 import MediscreenwebApp.model.Note;
-import MediscreenwebApp.model.Patient;
 import MediscreenwebApp.service.NotesService;
+import MediscreenwebApp.service.PatientService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -20,9 +20,11 @@ import java.time.LocalDate;
 public class NotesController {
 
     private final NotesService notesService;
+    private final PatientService patientService;
 
-    public NotesController(NotesService notesService) {
+    public NotesController(NotesService notesService, PatientService patientService) {
         this.notesService = notesService;
+        this.patientService = patientService;
     }
 
 
@@ -42,7 +44,7 @@ public class NotesController {
 
             if (!result.hasErrors()) {
                 note.setNoteDate(LocalDate.now());
-              //  notesService.t(patient);
+                notesService.addNote(note);
                 model.addAttribute("notes", notesService.getAllNotesByPatientId(note.getPatientId()));
                 return "redirect:/notes/list/" + note.getPatientId();
             }
@@ -52,9 +54,11 @@ public class NotesController {
 
 
     @GetMapping("/list/{patientId}")
-    public String getAllNotesByPatientId(@PathVariable("patientId") Long patientId, Model model) {
+    public String getAllNotesByPatientId(@PathVariable("patientId") Integer patientId, Model model) {
         model.addAttribute("notes", notesService.getAllNotesByPatientId(patientId));
         model.addAttribute("patientId", patientId);
+
+        model.addAttribute("scoring",patientService.computeScoring(patientId));
         return "notes/list";
     }
 
