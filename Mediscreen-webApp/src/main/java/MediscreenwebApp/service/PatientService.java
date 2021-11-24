@@ -20,7 +20,7 @@ public class PatientService {
 
     private final PatientGateway patientGateway;
     private final NoteGateway noteGateway;
-    ArrayList<String> keywords = new ArrayList<String>(
+   private  ArrayList<String> keywords = new ArrayList<String>(
             Arrays.asList("Hémoglobine A1C,","Microalbumine","Taille","Poids","Fumeur","Anormal","Cholestérol",
             "Vertige","Rechute","Réaction","Anticorps"));
 
@@ -69,7 +69,7 @@ public class PatientService {
        int count =0;
         for (Note note : allNotes) {
             for (String keyword : keywords) {
-                if (note.getNote().toLowerCase().contains(keyword.toLowerCase())){
+                if (note.getNote().toLowerCase().replaceAll(" ", "").contains(keyword.toLowerCase().replaceAll(" ",""))){
                    count++;
                     System.out.println(count);
                 }
