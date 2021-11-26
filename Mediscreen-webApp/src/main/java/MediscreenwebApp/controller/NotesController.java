@@ -57,7 +57,6 @@ public class NotesController {
     public String getAllNotesByPatientId(@PathVariable("patientId") Integer patientId, Model model) {
         model.addAttribute("notes", notesService.getAllNotesByPatientId(patientId));
         model.addAttribute("patientId", patientId);
-
         model.addAttribute("scoring",patientService.computeScoring(patientId));
         return "notes/list";
     }

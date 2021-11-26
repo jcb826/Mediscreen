@@ -20,10 +20,9 @@ public class PatientService {
 
     private final PatientGateway patientGateway;
     private final NoteGateway noteGateway;
-   private  ArrayList<String> keywords = new ArrayList<String>(
-            Arrays.asList("Hémoglobine A1C,","Microalbumine","Taille","Poids","Fumeur","Anormal","Cholestérol",
-            "Vertige","Rechute","Réaction","Anticorps"));
-
+    private ArrayList<String> keywords = new ArrayList<String>(
+            Arrays.asList("Hémoglobine A1C,", "Microalbumine", "Taille", "Poids", "Fumeur", "Anormal", "Cholestérol",
+                    "Vertige", "Rechute", "Réaction", "Anticorps"));
 
 
     public PatientService(PatientGateway patientGateway, NoteGateway noteGateway) {
@@ -64,27 +63,47 @@ public class PatientService {
         Patient patient = findPatientById(patientId);
         Integer age = computeAge(patient.getBirthday());
         String gender = patient.getGender();
-       List<Note> allNotes = Arrays.stream(noteGateway.getAllNotesByPatientId(patientId).getBody()).toList();
-
-       int count =0;
+        List<Note> allNotes = Arrays.stream(noteGateway.getAllNotesByPatientId(patientId).getBody()).toList();
+       // count the numbers of keywords found in all notes
+        int count = 0;
         for (Note note : allNotes) {
             for (String keyword : keywords) {
-                if (note.getNote().toLowerCase().replaceAll(" ", "").contains(keyword.toLowerCase().replaceAll(" ",""))){
-                   count++;
+                if (note.getNote().toLowerCase().replaceAll(" ", "").contains(keyword.toLowerCase().replaceAll(" ", ""))) {
+                    count++;
                     System.out.println(count);
                 }
-
             }
-
-
+        }
+        if (count == 0) {
+            return "diabetes scoring : None";
+        }
+        if (count == 2 && age < 30) {
+            return "diabetes scoring : Borderline";
+        }
+        if ((gender.contains("male")) && (age < 30) && (count == 3)) {
+            return "diabetes scoring : in Danger";
+        }
+        if ((gender.contains("female")) && (age < 30) && (count == 4)) {
+            return "diabetes scoring : in Danger";
+        }
+        if ((age >= 30) && (count == 6)) {
+            return "diabetes scoring : in Danger";
+        }
+        if ((gender.contains("male")) && (age < 30) && (count == 5)) {
+            return "diabetes scoring : Early onset";
+        }
+        if ((gender.contains("female")) && (age < 30) && (count == 7)) {
+            return "diabetes scoring : Early onset";
+        }
+        if ( (age > 30) && (count >= 8)) {
+            return "diabetes scoring : Early onset";
         }
 
-        return null;
+        return "diabetes scoring : None";
     }
 
     public Integer computeAge(LocalDate birthDay) {
         LocalDate birthDate = LocalDate.of(birthDay.getYear(), birthDay.getMonth(), birthDay.getDayOfMonth());
-
         return Period.between(birthDate, LocalDate.now()).getYears();
     }
 
