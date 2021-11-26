@@ -1,7 +1,6 @@
-package MediscreenwebApp.config;
+package Mediscreenmsdiabetesscoring.config;
 
 
-import MediscreenwebApp.gateway.DiabetesScoringGateway;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;

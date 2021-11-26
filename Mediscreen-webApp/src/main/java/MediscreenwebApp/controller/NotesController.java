@@ -1,5 +1,6 @@
 package MediscreenwebApp.controller;
 
+import MediscreenwebApp.gateway.DiabetesScoringGateway;
 import MediscreenwebApp.model.Note;
 import MediscreenwebApp.service.NotesService;
 import MediscreenwebApp.service.PatientService;
@@ -22,9 +23,11 @@ public class NotesController {
     private final NotesService notesService;
     private final PatientService patientService;
 
+
     public NotesController(NotesService notesService, PatientService patientService) {
         this.notesService = notesService;
         this.patientService = patientService;
+
     }
 
 
@@ -57,7 +60,6 @@ public class NotesController {
     public String getAllNotesByPatientId(@PathVariable("patientId") Integer patientId, Model model) {
         model.addAttribute("notes", notesService.getAllNotesByPatientId(patientId));
         model.addAttribute("patientId", patientId);
-        model.addAttribute("scoring",patientService.computeScoring(patientId));
         return "notes/list";
     }
 

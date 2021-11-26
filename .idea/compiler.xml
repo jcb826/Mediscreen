@@ -8,11 +8,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Mediscreen-ms-patient" />
-        <module name="Mediscreen-ms-notes" />
+        <module name="Mediscreen-ms-diabetes-scoring" />
         <module name="Mediscreen-webApp" />
+        <module name="Mediscreen-ms-notes" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Mediscreen-ms-diabetes-scoring" target="17" />
       <module name="Mediscreen-ms-notes" target="16" />
       <module name="Mediscreen-ms-patient" target="16" />
       <module name="Mediscreen-webApp" target="16" />
@@ -20,6 +22,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Mediscreen-ms-diabetes-scoring" options="-parameters" />
       <module name="Mediscreen-ms-notes" options="-parameters" />
       <module name="Mediscreen-ms-patient" options="-parameters" />
       <module name="Mediscreen-webApp" options="-parameters" />

@@ -22,8 +22,8 @@ public class PatientController {
     }
 
     @GetMapping
-    public Patient getPatientById(@RequestParam(name = "id") int number) {
-        return this.patientService.findPatientById(number);
+    public Patient getPatientById(@RequestParam(name = "id") int id) {
+        return this.patientService.findPatientById(id);
     }
 
     @PostMapping

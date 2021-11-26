@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/Mediscreen-webApp/pom.xml" />
         <option value="$PROJECT_DIR$/Mediscreen-ms-patient/pom.xml" />
         <option value="$PROJECT_DIR$/Mediscreen-ms-notes/pom.xml" />
+        <option value="$PROJECT_DIR$/Mediscreen-ms-diabetes-scoring/pom.xml" />
       </list>
     </option>
   </component>
