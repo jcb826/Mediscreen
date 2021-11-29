@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8f60fe0-0027-41d3-96a9-e010b46e1eba" name="Changes" comment="implementing diabetes scoring">
+    <list default="true" id="c8f60fe0-0027-41d3-96a9-e010b46e1eba" name="Changes" comment="implementing diabetes scoring tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediscreen-ms-diabetes-scoring/src/test/java/Mediscreenmsdiabetesscoring/MediscreenMsDiabetesScoringApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +31,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ms-user" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -125,9 +124,9 @@
       <list>
         <item itemvalue="JUnit.DiabetesScoringServiceTest.diabetesScoringServiceNoneResultTest" />
         <item itemvalue="Application.MediscreenMsPatientApplication" />
+        <item itemvalue="Application.MediscreenWebAppApplication" />
         <item itemvalue="Application.MediscreenMsNotesApplication" />
         <item itemvalue="Application.MediscreenMsDiabetesScoringApplication" />
-        <item itemvalue="Application.MediscreenWebAppApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -196,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637959960673</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="implementing diabetes scoring tests">
+      <created>1638176367271</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1638176367271</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -216,6 +222,7 @@
     <MESSAGE value="update notes view" />
     <MESSAGE value="implementing to add a new note" />
     <MESSAGE value="implementing diabetes scoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementing diabetes scoring" />
+    <MESSAGE value="implementing diabetes scoring tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementing diabetes scoring tests" />
   </component>
 </project>

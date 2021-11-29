@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.web.client.RestTemplate;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -18,10 +19,10 @@ class DiabetesScoringServiceTest {
 
     @Autowired
     DiabetesScoringService diabetesScoringService;
-    @Autowired
-    NoteGateway noteGateway;
-    @Autowired
-    PatientGateway patientGateway;
+
+    RestTemplate restTemplate = new RestTemplate();
+    PatientGateway patientGateway = new PatientGateway(restTemplate);
+    NoteGateway noteGateway = new NoteGateway(restTemplate);
 
     LocalDate birthDay = LocalDate.of(1980, 05, 05);
     private final Patient patient1 = patientGateway.createPatient(new Patient(null, "test", "test", birthDay, "test", "test", "6666"));
