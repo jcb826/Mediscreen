@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8f60fe0-0027-41d3-96a9-e010b46e1eba" name="Changes" comment="implementing diabetes scoring tests">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mediscreen-ms-diabetes-scoring/src/test/java/Mediscreenmsdiabetesscoring/DiabetesScoringServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-ms-diabetes-scoring/src/test/java/Mediscreenmsdiabetesscoring/DiabetesScoringServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,20 +51,7 @@
       <recent name="MediscreenwebApp.gateway" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DiabetesScoringServiceTest.diabetesScoringServiceNoneResultTest">
-    <configuration name="MediscreenMsDiabetesScoringApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Mediscreenmsdiabetesscoring.MediscreenMsDiabetesScoringApplication" />
-      <module name="Mediscreen-ms-diabetes-scoring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Mediscreenmsdiabetesscoring.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.DiabetesScoringServiceTest.diabetesScoringServiceBorderlineResultTest">
     <configuration name="MediscreenMsNotesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Mediscreenmsnotes.MediscreenMsNotesApplication" />
       <module name="Mediscreen-ms-notes" />
@@ -104,6 +91,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DiabetesScoringServiceTest.diabetesScoringServiceBorderlineResultTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mediscreen-ms-diabetes-scoring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Mediscreenmsdiabetesscoring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Mediscreenmsdiabetesscoring" />
+      <option name="MAIN_CLASS_NAME" value="Mediscreenmsdiabetesscoring.DiabetesScoringServiceTest" />
+      <option name="METHOD_NAME" value="diabetesScoringServiceBorderlineResultTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DiabetesScoringServiceTest.diabetesScoringServiceNoneResultTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mediscreen-ms-diabetes-scoring" />
       <extension name="coverage">
@@ -122,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DiabetesScoringServiceTest.diabetesScoringServiceBorderlineResultTest" />
         <item itemvalue="JUnit.DiabetesScoringServiceTest.diabetesScoringServiceNoneResultTest" />
         <item itemvalue="Application.MediscreenMsPatientApplication" />
         <item itemvalue="Application.MediscreenWebAppApplication" />
         <item itemvalue="Application.MediscreenMsNotesApplication" />
-        <item itemvalue="Application.MediscreenMsDiabetesScoringApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638176367271</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="implementing diabetes scoring tests">
+      <created>1638190761583</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1638190761583</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
