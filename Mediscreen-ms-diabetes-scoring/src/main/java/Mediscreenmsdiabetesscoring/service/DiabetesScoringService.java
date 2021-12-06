@@ -52,7 +52,7 @@ public class DiabetesScoringService {
         if (count == 0) {
             return "diabetes scoring : None";
         }
-        if (count == 2 && age < 30) {
+        if (count==2 && age > 30) {
             return "diabetes scoring : Borderline";
         }
         if ((gender.contains("male")) && (age < 30) && (count == 3)) {
