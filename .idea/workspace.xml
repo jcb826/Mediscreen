@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8f60fe0-0027-41d3-96a9-e010b46e1eba" name="Changes" comment="implementing diabetes scoring tests added &quot;Borderline &quot;test">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_11_2021_14_57_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_11_2021_14_57__Changes_.xml" beforeDir="false" />
+    <list default="true" id="c8f60fe0-0027-41d3-96a9-e010b46e1eba" name="Changes" comment="ending diabetes scoring test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediscreen-ms-diabetes-scoring/src/main/java/Mediscreenmsdiabetesscoring/service/DiabetesScoringService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-ms-diabetes-scoring/src/main/java/Mediscreenmsdiabetesscoring/service/DiabetesScoringService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mediscreen-ms-diabetes-scoring/src/test/java/Mediscreenmsdiabetesscoring/DiabetesScoringServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-ms-diabetes-scoring/src/test/java/Mediscreenmsdiabetesscoring/DiabetesScoringServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +52,59 @@
       <recent name="MediscreenwebApp.gateway" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DiabetesScoringServiceTest">
+  <component name="RunManager" selected="Application.MediscreenWebAppApplication">
+    <configuration name="MediscreenMsDiabetesScoringApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Mediscreenmsdiabetesscoring.MediscreenMsDiabetesScoringApplication" />
+      <module name="Mediscreen-ms-diabetes-scoring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Mediscreenmsdiabetesscoring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MediscreenMsNotesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Mediscreenmsnotes.MediscreenMsNotesApplication" />
+      <module name="Mediscreen-ms-notes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Mediscreenmsnotes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MediscreenMsPatientApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Mediscreenmspatient.MediscreenMsPatientApplication" />
+      <module name="Mediscreen-ms-patient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Mediscreenmspatient.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MediscreenWebAppApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MediscreenwebApp.MediscreenWebAppApplication" />
+      <module name="Mediscreen-webApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MediscreenwebApp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DiabetesScoringServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mediscreen-ms-diabetes-scoring" />
       <extension name="coverage">
@@ -71,77 +120,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiabetesScoringServiceTest.diabetesScoringServiceInDangerResult6TriggersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mediscreen-ms-diabetes-scoring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Mediscreenmsdiabetesscoring.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Mediscreenmsdiabetesscoring" />
-      <option name="MAIN_CLASS_NAME" value="Mediscreenmsdiabetesscoring.DiabetesScoringServiceTest" />
-      <option name="METHOD_NAME" value="diabetesScoringServiceInDangerResult6TriggersTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DiabetesScoringServiceTest.diabetesScoringServiceInDangerResultFeMale7TriggersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mediscreen-ms-diabetes-scoring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Mediscreenmsdiabetesscoring.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Mediscreenmsdiabetesscoring" />
-      <option name="MAIN_CLASS_NAME" value="Mediscreenmsdiabetesscoring.DiabetesScoringServiceTest" />
-      <option name="METHOD_NAME" value="diabetesScoringServiceInDangerResultFeMale7TriggersTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DiabetesScoringServiceTest.diabetesScoringServiceInDangerResultMale5TriggersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mediscreen-ms-diabetes-scoring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Mediscreenmsdiabetesscoring.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Mediscreenmsdiabetesscoring" />
-      <option name="MAIN_CLASS_NAME" value="Mediscreenmsdiabetesscoring.DiabetesScoringServiceTest" />
-      <option name="METHOD_NAME" value="diabetesScoringServiceInDangerResultMale5TriggersTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DiabetesScoringServiceTest.diabetesScoringServiceInDangerResultMorethan30And8TriggersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mediscreen-ms-diabetes-scoring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Mediscreenmsdiabetesscoring.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Mediscreenmsdiabetesscoring" />
-      <option name="MAIN_CLASS_NAME" value="Mediscreenmsdiabetesscoring.DiabetesScoringServiceTest" />
-      <option name="METHOD_NAME" value="diabetesScoringServiceInDangerResultMorethan30And8TriggersTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MediscreenWebAppApplication" />
+        <item itemvalue="Application.MediscreenMsPatientApplication" />
+        <item itemvalue="Application.MediscreenMsNotesApplication" />
+        <item itemvalue="Application.MediscreenMsDiabetesScoringApplication" />
         <item itemvalue="JUnit.DiabetesScoringServiceTest" />
-        <item itemvalue="JUnit.DiabetesScoringServiceTest.diabetesScoringServiceInDangerResultMorethan30And8TriggersTest" />
-        <item itemvalue="JUnit.DiabetesScoringServiceTest.diabetesScoringServiceInDangerResultFeMale7TriggersTest" />
-        <item itemvalue="JUnit.DiabetesScoringServiceTest.diabetesScoringServiceInDangerResultMale5TriggersTest" />
-        <item itemvalue="JUnit.DiabetesScoringServiceTest.diabetesScoringServiceInDangerResult6TriggersTest" />
       </list>
     </recent_temporary>
   </component>
@@ -231,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638191124737</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="ending diabetes scoring test">
+      <created>1638797221422</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1638797221422</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -253,7 +245,8 @@
     <MESSAGE value="implementing diabetes scoring" />
     <MESSAGE value="implementing diabetes scoring tests" />
     <MESSAGE value="implementing diabetes scoring tests added &quot;Borderline &quot;test" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementing diabetes scoring tests added &quot;Borderline &quot;test" />
+    <MESSAGE value="ending diabetes scoring test" />
+    <option name="LAST_COMMIT_MESSAGE" value="ending diabetes scoring test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -76,6 +76,7 @@ class DiabetesScoringServiceTest {
         Assertions.assertEquals("diabetes scoring : None", scoring);
 
         patientGateway.delete(patient1.getId());
+
     }
 
     @Test
