@@ -8,10 +8,13 @@
 </head>
 <body>
 <div class="container">
-
-	<div class="row">
-		<h2>Add New User</h2>
+	<div class="col-6 text-right">
+		<a href="/patient/list">Home</a>
 	</div>
+	<div class="row">
+		<h2>Add New Patient</h2>
+	</div>
+
 
 	<div class="row">
 		<form action="#" th:action="@{/patient/validate}" th:object="${patient}" method="post" class="form-horizontal" style="width: 100%">

@@ -8,19 +8,8 @@
 </head>
 <body>
 <div class="container">
-	<div class="row">
-		<div class="col-6">
-			<a href="/bidList/list">Bid List</a>&nbsp;|&nbsp;
-			<a href="/curvePoint/list">Curve Points</a>&nbsp;|&nbsp;
-			<a href="/rating/list">Ratings</a>&nbsp;|&nbsp;
-			<a href="/trade/list">Trade</a>&nbsp;|&nbsp;
-			<a href="/ruleName/list">Rule</a>
-		</div>
-		<div class="col-6 text-right">
-			<a href="/">Home</a>&nbsp;|&nbsp;<a href="/login">Login</a>
-		</div>
-	</div>
-	<div class="row"><h2>User List</h2></div>
+
+	<div class="row"><h2>Patients List</h2></div>
 	<div class="row">
 		<a href="/patient/add" class="btn btn-primary btn-sm">Add New</a>
 		<table class="table table-bordered">
@@ -39,16 +28,16 @@
 			</thead>
 			<tbody>
 			<tr th:each="patient : ${patients}">
-				<td style="width: 10%" th:text="${patient.id}"></td>
-				<td th:text="${patient.firstName}"></td>
-				<td th:text="${patient.lastName}"></td>
-				<td style="width: 25%" th:text="${patient.birthday}"></td>
+				<td style="width: 5%" th:text="${patient.id}"></td>
+				<td style="width: 15%"th:text="${patient.firstName}"></td>
+				<td style="width: 15%"th:text="${patient.lastName}"></td>
+				<td style="width: 10%" th:text="${patient.birthday}"></td>
 				<td th:text="${patient.gender}"></td>
 				<td th:text="${patient.address}"></td>
 				<td th:text="${patient.phone}"></td>
 				<td style="width: 15%" class="text-center">
-					<a th:href="@{/asses/{id}(id=${patient.id})}">generate</a>
-				<td style="width: 15%" class="text-center">
+					<a style="width: 15%"th:href="@{/asses/{id}(id=${patient.id})}">generate</a>
+				<td style="width: 15%"class="text-center">
 					<a th:href="@{/notes/list/{id}(id=${patient.id})}">manage</a>
 
 				</td>

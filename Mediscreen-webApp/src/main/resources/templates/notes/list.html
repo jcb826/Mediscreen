@@ -9,20 +9,14 @@
 <body>
 <div class="container">
 	<div class="row">
-		<div class="col-6">
-			<a href="/bidList/list">Bid List</a>&nbsp;|&nbsp;
-			<a href="/curvePoint/list">Curve Points</a>&nbsp;|&nbsp;
-			<a href="/rating/list">Ratings</a>&nbsp;|&nbsp;
-			<a href="/trade/list">Trade</a>&nbsp;|&nbsp;
-			<a href="/ruleName/list">Rule</a>
-		</div>
 		<div class="col-6 text-right">
-			<a href="/">Home</a>&nbsp;|&nbsp;<a href="/login">Login</a>
+			<a href="/patient/list">Home</a>
 		</div>
+
 	</div>
-	<div class="row"><h2>User List</h2></div>
+	<div class="row"><h2>Notes List</h2></div>
 	<div class="row">
-		<a th:href="@{/notes/add/{id}(id=${patientId})}">Add New note</a>
+		<a th:href="@{/notes/add/{id}(id=${patientId})}" class="btn btn-primary btn-sm">Add a new note</a>
 
 		<div class="col-6 text-right">
 			<td style="width: 10%" th:text="${scoring}"></td>
