@@ -1,8 +1,7 @@
 package MediscreenwebApp.controller;
 
-import MediscreenwebApp.gateway.DiabetesScoringGateway;
 import MediscreenwebApp.model.Note;
-import MediscreenwebApp.service.NotesService;
+import MediscreenwebApp.service.NoteService;
 import MediscreenwebApp.service.PatientService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -20,11 +19,11 @@ import java.time.LocalDate;
 @RequestMapping("notes")
 public class NotesController {
 
-    private final NotesService notesService;
+    private final NoteService notesService;
     private final PatientService patientService;
 
 
-    public NotesController(NotesService notesService, PatientService patientService) {
+    public NotesController(NoteService notesService, PatientService patientService) {
         this.notesService = notesService;
         this.patientService = patientService;
 

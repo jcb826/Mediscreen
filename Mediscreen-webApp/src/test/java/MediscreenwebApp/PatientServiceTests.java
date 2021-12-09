@@ -80,6 +80,7 @@ class PatientServiceTests {
 
         Assertions.assertEquals(2, patients.size());
 
-
+        patientService.deletePatient(patientCreated.getId());
+        patientService.deletePatient(patientCreated2.getId());
     }
 }

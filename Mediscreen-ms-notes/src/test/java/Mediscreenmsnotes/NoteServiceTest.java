@@ -56,8 +56,9 @@ class NoteServiceTest {
         Note note3 = new Note(null, 55l, "test3", LocalDate.now());
         Note noteCreated3 = noteService.createNote(note3);
 
+        Note result = noteService.findNoteById(noteCreated3.getId());
 
-        Assertions.assertEquals("test3", noteCreated3.getNote());
+        Assertions.assertEquals("test3",result.getNote());
 
         noteService.deleteNote(noteCreated3);
 

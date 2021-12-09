@@ -58,6 +58,10 @@ public class NotesController {
         return noteService.findAllNotes();
     }
 
-
+    @DeleteMapping("/note")
+    public void deleteNote(@RequestParam(name = "id") String id) {
+        Note note = noteService.findNoteById(id);
+        noteService.deleteNote(note);
+    }
 
 }

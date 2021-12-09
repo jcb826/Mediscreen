@@ -22,7 +22,7 @@ public class NoteGateway {
 
     @SneakyThrows
     public ResponseEntity<Note[]> getAllNotesByPatientId(Integer patientId) {
-        return restTemplate.getForEntity("http://localhost:8082/patHistory/notes?patientId={patientId}", Note[].class,patientId);
+        return restTemplate.getForEntity("http://localhost:8082/patHistory/notes?patientId={patientId}", Note[].class, patientId);
     }
 
     @SneakyThrows
@@ -31,4 +31,9 @@ public class NoteGateway {
         return restTemplate.postForEntity("http://localhost:8082/patHistory/add", httpEntity, Note.class);
     }
 
+    @SneakyThrows
+    public void delete(String id) {
+        restTemplate.delete("http://localhost:8082/patHistory/note?id={id}", id);
+
+    }
 }

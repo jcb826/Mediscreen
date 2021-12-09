@@ -9,12 +9,12 @@ import java.util.Arrays;
 import java.util.List;
 
 @Service("NoteService")
-public class NotesService {
+public class NoteService {
 
     private final NoteGateway noteGateway;
 
 
-    public NotesService(NoteGateway patientGateway, NoteGateway noteGateway, PatientService patientService) {
+    public NoteService(NoteGateway patientGateway, NoteGateway noteGateway, PatientService patientService) {
         this.noteGateway = noteGateway;
 
 
@@ -29,5 +29,9 @@ public class NotesService {
         return noteGateway.addNote(note).getBody();
     }
 
+    public void deleteNote(String id) {
+
+        noteGateway.delete(id);
+    }
 
 }
