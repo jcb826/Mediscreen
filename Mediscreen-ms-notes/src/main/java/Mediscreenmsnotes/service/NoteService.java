@@ -38,17 +38,12 @@ public class NoteService {
 
     }
 
-/*
-    public Patient updatePatient(Patient patient, Integer id) {
-        patient.setId(id);
-        return patientRepository.save(patient);
-    }
-    public void deletePatient(Integer id){
-        Patient patient = patientRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("Invalid patient Id:" + id));
-        patientRepository.delete(patient);
+
+    public void deleteNote(Note note){
+       noteRepository.delete(note);
     }
 
- */
+
 
 
 }

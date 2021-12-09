@@ -18,7 +18,6 @@ public class PatientController {
     @Autowired
     DiabetesScoringService diabetesScoringService;
 
-
     @GetMapping
     public String getDiabetesScoringById(@RequestParam(name = "id") int id) {
         return this.diabetesScoringService.computeScoring(id);

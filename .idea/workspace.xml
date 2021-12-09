@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8f60fe0-0027-41d3-96a9-e010b46e1eba" name="Changes" comment="ending diabetes scoring test">
+    <list default="true" id="c8f60fe0-0027-41d3-96a9-e010b46e1eba" name="Changes" comment="ending view">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mediscreen-ms-diabetes-scoring/src/main/java/Mediscreenmsdiabetesscoring/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-ms-diabetes-scoring/src/main/java/Mediscreenmsdiabetesscoring/controller/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediscreen-webApp/src/main/java/MediscreenwebApp/controller/DiabetesScoringController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-webApp/src/main/java/MediscreenwebApp/controller/DiabetesScoringController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediscreen-webApp/src/main/resources/templates/diabetesScoring/scoring.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-webApp/src/main/resources/templates/diabetesScoring/scoring.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediscreen-webApp/src/main/resources/templates/notes/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-webApp/src/main/resources/templates/notes/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediscreen-webApp/src/main/resources/templates/notes/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-webApp/src/main/resources/templates/notes/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediscreen-webApp/src/main/resources/templates/patient/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-webApp/src/main/resources/templates/patient/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediscreen-webApp/src/main/resources/templates/patient/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-webApp/src/main/resources/templates/patient/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediscreen-webApp/src/main/resources/templates/patient/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-webApp/src/main/resources/templates/patient/update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mediscreen-ms-notes/src/main/java/Mediscreenmsnotes/service/NoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-ms-notes/src/main/java/Mediscreenmsnotes/service/NoteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mediscreen-ms-notes/src/test/java/Mediscreenmsnotes/NoteServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-ms-notes/src/test/java/Mediscreenmsnotes/NoteServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mediscreen-webApp/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-webApp/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +56,7 @@
       <recent name="MediscreenwebApp.gateway" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MediscreenWebAppApplication">
+  <component name="RunManager" selected="JUnit.NoteServiceTest">
     <configuration name="MediscreenMsDiabetesScoringApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Mediscreenmsdiabetesscoring.MediscreenMsDiabetesScoringApplication" />
       <module name="Mediscreen-ms-diabetes-scoring" />
@@ -113,16 +109,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiabetesScoringServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mediscreen-ms-diabetes-scoring" />
+    <configuration name="NoteServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mediscreen-ms-notes" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Mediscreenmsdiabetesscoring.*" />
+          <option name="PATTERN" value="Mediscreenmsnotes.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Mediscreenmsdiabetesscoring" />
-      <option name="MAIN_CLASS_NAME" value="Mediscreenmsdiabetesscoring.DiabetesScoringServiceTest" />
+      <option name="PACKAGE_NAME" value="Mediscreenmsnotes" />
+      <option name="MAIN_CLASS_NAME" value="Mediscreenmsnotes.NoteServiceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -130,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MediscreenWebAppApplication" />
+        <item itemvalue="JUnit.NoteServiceTest" />
         <item itemvalue="Application.MediscreenMsPatientApplication" />
+        <item itemvalue="Application.MediscreenWebAppApplication" />
         <item itemvalue="Application.MediscreenMsNotesApplication" />
         <item itemvalue="Application.MediscreenMsDiabetesScoringApplication" />
-        <item itemvalue="JUnit.DiabetesScoringServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -238,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638887473232</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="ending view">
+      <created>1638962294543</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1638962294543</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -261,17 +264,7 @@
     <MESSAGE value="implementing diabetes scoring tests" />
     <MESSAGE value="implementing diabetes scoring tests added &quot;Borderline &quot;test" />
     <MESSAGE value="ending diabetes scoring test" />
-    <option name="LAST_COMMIT_MESSAGE" value="ending diabetes scoring test" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Mediscreen-ms-diabetes-scoring/src/main/java/Mediscreenmsdiabetesscoring/service/DiabetesScoringService.java</url>
-          <line>66</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="ending view" />
+    <option name="LAST_COMMIT_MESSAGE" value="ending view" />
   </component>
 </project>
