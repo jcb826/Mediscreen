@@ -74,7 +74,7 @@
 				<version>0.8.7</version>
 				<configuration>
 					<excludes>
-						<exclude>com/SafetyNet/Alerts/service/dto/**</exclude>
+						<exclude></exclude>
 
 					</excludes>
 				</configuration>
