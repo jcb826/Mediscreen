@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8f60fe0-0027-41d3-96a9-e010b46e1eba" name="Changes" comment="ending jacoco">
+    <list default="true" id="c8f60fe0-0027-41d3-96a9-e010b46e1eba" name="Changes" comment="adding docker file">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediscreen-ms-diabetes-scoring/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediscreen-ms-diabetes-scoring/src/test/java/Mediscreenmsdiabetesscoring/DiabetesScoringServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-ms-diabetes-scoring/src/test/java/Mediscreenmsdiabetesscoring/DiabetesScoringServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediscreen-webApp/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-webApp/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mediscreen-ms-diabetes-scoring/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-ms-diabetes-scoring/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mediscreen-ms-diabetes-scoring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-ms-diabetes-scoring/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mediscreen-ms-diabetes-scoring/src/main/java/Mediscreenmsdiabetesscoring/service/DiabetesScoringService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-ms-diabetes-scoring/src/main/java/Mediscreenmsdiabetesscoring/service/DiabetesScoringService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mediscreen-ms-notes/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-ms-notes/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mediscreen-ms-notes/src/main/java/Mediscreenmsnotes/MediscreenMsNotesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-ms-notes/src/main/java/Mediscreenmsnotes/MediscreenMsNotesApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mediscreen-ms-patient/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-ms-patient/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +60,7 @@
       <recent name="MediscreenwebApp.gateway" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MediscreenMsDiabetesScoringApplication">
+  <component name="RunManager" selected="Application.MediscreenWebAppApplication">
     <configuration name="MediscreenMsDiabetesScoringApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Mediscreenmsdiabetesscoring.MediscreenMsDiabetesScoringApplication" />
       <module name="Mediscreen-ms-diabetes-scoring" />
@@ -95,36 +100,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiabetesScoringServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mediscreen-ms-diabetes-scoring" />
+    <configuration name="MediscreenWebAppApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MediscreenwebApp.MediscreenWebAppApplication" />
+      <module name="Mediscreen-webApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Mediscreenmsdiabetesscoring.*" />
+          <option name="PATTERN" value="MediscreenwebApp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Mediscreenmsdiabetesscoring" />
-      <option name="MAIN_CLASS_NAME" value="Mediscreenmsdiabetesscoring.DiabetesScoringServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Mediscreen-ms-diabetes-scoring/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+    <configuration name="Mediscreen-webApp/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
-          <option name="sourceFilePath" value="Mediscreen-ms-diabetes-scoring/Dockerfile" />
+          <option name="sourceFilePath" value="Mediscreen-webApp/Dockerfile" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MediscreenMsDiabetesScoringApplication" />
-        <item itemvalue="Docker.Mediscreen-ms-diabetes-scoring/Dockerfile" />
-        <item itemvalue="JUnit.DiabetesScoringServiceTest" />
-        <item itemvalue="Application.MediscreenMsNotesApplication" />
+        <item itemvalue="Application.MediscreenWebAppApplication" />
         <item itemvalue="Application.MediscreenMsPatientApplication" />
+        <item itemvalue="Application.MediscreenMsNotesApplication" />
+        <item itemvalue="Application.MediscreenMsDiabetesScoringApplication" />
+        <item itemvalue="Docker.Mediscreen-webApp/Dockerfile" />
       </list>
     </recent_temporary>
   </component>
@@ -256,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639134451859</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="adding docker file">
+      <created>1639142437759</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1639142437759</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -283,7 +293,8 @@
     <MESSAGE value="ending ms-notes tests" />
     <MESSAGE value="adding jacoco + ending web app tests" />
     <MESSAGE value="ending jacoco" />
-    <option name="LAST_COMMIT_MESSAGE" value="ending jacoco" />
+    <MESSAGE value="adding docker file" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding docker file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

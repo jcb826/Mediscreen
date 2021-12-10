@@ -45,7 +45,6 @@ public class DiabetesScoringService {
             for (String keyword : keywords) {
                 if (note.getNote().toLowerCase().replaceAll(" ", "").contains(keyword.toLowerCase().replaceAll(" ", ""))) {
                     count++;
-                    System.out.println(count);
                 }
             }
         }
