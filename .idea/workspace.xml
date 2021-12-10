@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8f60fe0-0027-41d3-96a9-e010b46e1eba" name="Changes" comment="adding jacoco + ending web app tests">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" afterDir="false" />
+    <list default="true" id="c8f60fe0-0027-41d3-96a9-e010b46e1eba" name="Changes" comment="ending jacoco">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediscreen-ms-diabetes-scoring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-ms-diabetes-scoring/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediscreen-ms-notes/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-ms-notes/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediscreen-ms-notes/src/main/java/Mediscreenmsnotes/MediscreenMsNotesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-ms-notes/src/main/java/Mediscreenmsnotes/MediscreenMsNotesApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediscreen-ms-patient/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-ms-patient/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediscreen-webApp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-webApp/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediscreen-webApp/src/main/java/MediscreenwebApp/MediscreenWebAppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-webApp/src/main/java/MediscreenwebApp/MediscreenWebAppApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mediscreen-ms-diabetes-scoring/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mediscreen-ms-diabetes-scoring/src/test/java/Mediscreenmsdiabetesscoring/DiabetesScoringServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-ms-diabetes-scoring/src/test/java/Mediscreenmsdiabetesscoring/DiabetesScoringServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mediscreen-webApp/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Mediscreen-webApp/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,19 +34,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SafetyNet" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Mediscreen-ms-diabetes-scoring" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\bazin\Projets OCR\Mediscreen\Mediscreen-ms-diabetes-scoring" />
+      <recent name="C:\Users\bazin\Projets OCR\Mediscreen\Mediscreen-ms-notes" />
+      <recent name="C:\Users\bazin\Projets OCR\Mediscreen\Mediscreen-ms-patient" />
       <recent name="C:\Users\bazin\Projets OCR\Mediscreen\Mediscreen-webApp" />
       <recent name="C:\Users\bazin\Projets OCR\Mediscreen\Mediscreen-webApp\src\main\resources\templates\diabetesScoring" />
-      <recent name="C:\Users\bazin\Projets OCR\Mediscreen\Mediscreen-ms-diabetes-scoring\src\main\java\Mediscreenmsdiabetesscoring\model" />
-      <recent name="C:\Users\bazin\Projets OCR\Mediscreen\Mediscreen-ms-diabetes-scoring\src\main\java\Mediscreenmsdiabetesscoring" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Mediscreenmsdiabetesscoring" />
@@ -59,7 +55,20 @@
       <recent name="MediscreenwebApp.gateway" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.Mediscreen-webApp/Dockerfile">
+  <component name="RunManager" selected="Application.MediscreenMsDiabetesScoringApplication">
+    <configuration name="MediscreenMsDiabetesScoringApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Mediscreenmsdiabetesscoring.MediscreenMsDiabetesScoringApplication" />
+      <module name="Mediscreen-ms-diabetes-scoring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Mediscreenmsdiabetesscoring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MediscreenMsNotesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Mediscreenmsnotes.MediscreenMsNotesApplication" />
       <module name="Mediscreen-ms-notes" />
@@ -101,33 +110,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PatientServiceTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mediscreen-webApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="MediscreenwebApp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="MediscreenwebApp" />
-      <option name="MAIN_CLASS_NAME" value="MediscreenwebApp.PatientServiceTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Mediscreen-webApp/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+    <configuration name="Mediscreen-ms-diabetes-scoring/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
-          <option name="sourceFilePath" value="Mediscreen-webApp/Dockerfile" />
+          <option name="sourceFilePath" value="Mediscreen-ms-diabetes-scoring/Dockerfile" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.Mediscreen-webApp/Dockerfile" />
-        <item itemvalue="JUnit.PatientServiceTests" />
+        <item itemvalue="Application.MediscreenMsDiabetesScoringApplication" />
+        <item itemvalue="Docker.Mediscreen-ms-diabetes-scoring/Dockerfile" />
         <item itemvalue="JUnit.DiabetesScoringServiceTest" />
         <item itemvalue="Application.MediscreenMsNotesApplication" />
         <item itemvalue="Application.MediscreenMsPatientApplication" />
@@ -255,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639060912039</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="ending jacoco">
+      <created>1639134451859</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1639134451859</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -281,7 +282,8 @@
     <MESSAGE value="ending view" />
     <MESSAGE value="ending ms-notes tests" />
     <MESSAGE value="adding jacoco + ending web app tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding jacoco + ending web app tests" />
+    <MESSAGE value="ending jacoco" />
+    <option name="LAST_COMMIT_MESSAGE" value="ending jacoco" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

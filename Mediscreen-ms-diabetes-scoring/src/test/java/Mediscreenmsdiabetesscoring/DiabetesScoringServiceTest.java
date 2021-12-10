@@ -77,6 +77,7 @@ class DiabetesScoringServiceTest {
 
         patientGateway.delete(patient1.getId());
 
+
     }
 
     @Test
